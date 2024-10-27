@@ -1,39 +1,42 @@
-
 * {
-    margin: 0;
-    /*바깥쪽 여백 : 0*/
-    padding: 0;
-    /*안쪽 여백 : 0*/
-    box-sizing: border-box;
-    /*테두리두께 무시*/
-    
+  margin: 0;
+  /*바깥쪽 여백 : 0*/
+  padding: 0;
+  /*안쪽 여백 : 0*/
+  box-sizing: border-box;
+  /*테두리두께 무시*/
+  border: 1px solid black;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*스크롤 스르륵할 수 있게*/
+}
+
+a {
+  text-decoration: none;
+  /*밑줄 제거*/
+  display: block;
+  /*a태그를 블록요소로 변경*/
+  color: black;
+  /*글자색 : black*/
+}
+
+li {
+  list-style-type: none;
+  /*li태그 기호 제거*/
+}
 
 
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    /*스크롤 스르륵할 수 있게*/
-  }
-  
-  a {
-    text-decoration: none;
-    /*밑줄 제거*/
-    display: block;
-    /*a태그를 블록요소로 변경*/
-    color: black;
-    /*글자색 : black*/
-  }
-  
-  li {
-    list-style-type: none;
-    /*li태그 기호 제거*/
-  }
+
+
+
+
+
 
   .container {
     width: 100%;
-    height: 1100px;
-
+    height: 1200px;
   }
 
   .header{
@@ -147,13 +150,15 @@
     height: 800px;
 
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
  
   .about h1 {
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+
+    margin-top: 50px;
   }
 
   .about .contents {
@@ -192,6 +197,9 @@
     height: 500px;
   }
 
+  .about .leftdown {
+    display: flex;
+  }
   .fa-brands {
     font-size: 20px;
     margin-right: 6px;
