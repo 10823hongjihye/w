@@ -5,7 +5,6 @@
   /*안쪽 여백 : 0*/
   box-sizing: border-box;
   /*테두리두께 무시*/
-  border: 1px solid black;
 }
 
 html {
@@ -34,9 +33,15 @@ li {
 
 
 
+
+
+
+
+
   .container {
     width: 100%;
     height: 1200px;
+  background-color: #f0f7f7;
   }
 
   .header{
@@ -107,22 +112,23 @@ li {
 
   .main h1 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    cursor:default;
   }
   
   .main h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .main p {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   
   .main button {
     font-size: 20px;
-    width: 100px;
+    width: 150px;
     height: 50px;
   
     border: 1px solid black;
@@ -138,6 +144,10 @@ li {
     border: 1px solid  hsl(202, 100%, 71%);
     color:   hsl(202, 100%, 71%);
   }
+
+
+
+
 
 
 
@@ -176,7 +186,7 @@ li {
   }
 
   .about .left h3 {
-    color: hsl(202, 100%, 71%);
+    color:black;
     font-size: 20px;
   }
   
@@ -186,19 +196,25 @@ li {
   }
 
   .about .right {
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height:550px;
 
     padding-left: 200px;
   }
   
   .about .right img {
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
   }
 
   .about .leftdown {
     display: flex;
+    margin-top: 20px;
+    
+  }
+  .about i{
+    font-size: 30px;
+    margin-right: 10px;
   }
   .fa-brands {
     font-size: 20px;
@@ -213,6 +229,12 @@ li {
   .fa-facebook {
     color: #3b5998;
   }
+
+
+
+
+
+
 
 
 
@@ -234,13 +256,12 @@ li {
     padding-top: 60px;
   }
   
-  .skills h2 {
-    font-size: 30px;
-    color: hsl(202, 100%, 71%);
-  }
-  
+
   .skills h1 {
     font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+    margin-top: 50px;
   }
   
   .skills .contents {
@@ -254,7 +275,7 @@ li {
   
   .skills .contents li {
     width: 350px;
-    height: 350px;
+    height: 300px;
     background-color: white;
   
     padding: 10px;
@@ -265,8 +286,9 @@ li {
   .skills h3 {
     margin-top: 20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
   }
+
   
   .skills p {
     margin-top: 30px;
@@ -277,10 +299,25 @@ li {
   
   .skills i {
     color: hsl(202, 100%, 71%);
+
+    font-size: 40px;
+  }
+
+  .skills img{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    
+    display: block;
+    margin: 0 auto;
+  }
+
+  .projects .testy p{
+    margin-left: 20px;
   }
   
-  .fa-keyboard {
-    font-size: 30px;
+  .skills .testy{
+    display: flex;
   }
   
   .skills .contents li:hover {
@@ -301,4 +338,131 @@ li {
 
 
 
+
+
+
+
+  .bg {
+    width: 100%;
+    height: 800px;
+    background: url(bg2.png) no-repeat;
+    background-size: cover;
+  
+  
+    background-attachment: fixed;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .projects {
+    height: 1200px;
+  }
+  .projects .test{
+    display: flex;
+  }
+  .projects .test p{
+    margin-left: 20px;
+  }
+  .projects img{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  
+  .contact h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .contact .contents {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+  }
+  
+  .contact .left {
+    width: 400px;
+    height: 600px;
+  }
+  
+  .contact .right {
+    width: 800px;
+    height: 600px;
+    border-left: 2px dashed #f1efef;
+    padding-left: 50px;
+  }
+  
+  .info li {
+    width: 350px;
+    height: 80px;
+    
+  
+    margin-bottom: 20px;
+    border: 1px solid #ecebeb;
+  
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  
+  .contact .right p {
+    font-size: 25px;
+  }
+  
+  .contact .right input {
+    width: 700px;
+    height: 30px;
+    margin-bottom: 30px;
+  
+    border: 1px solid #f0f0f0;
+  }
+  
+  .contact .right textarea {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .contact .right button {
+    width: 700px;
+    height: 30px;
+    background-color: hsl(202, 100%, 71%);
+    color: white;
+  }
 
