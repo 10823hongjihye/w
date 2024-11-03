@@ -168,7 +168,7 @@ li {
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .about .contents {
@@ -392,7 +392,6 @@ li {
 
 
 
-
   .contact {
     width: 1200px;
     height: 800px;
@@ -457,6 +456,8 @@ li {
     width: 700px;
     height: 300px;
     border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    resize: both;
   }
   
   .contact .right button {
