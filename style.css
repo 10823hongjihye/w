@@ -5,6 +5,7 @@
   /*안쪽 여백 : 0*/
   box-sizing: border-box;
   /*테두리두께 무시*/
+  color: #0d212c;
 }
 
 html {
@@ -40,15 +41,17 @@ li {
 
   .container {
     width: 100%;
-    height: 1200px;
-  background-color: #f0f7f7;
+    height: 1000px;
+    background: linear-gradient(to bottom, #e2f0fc, #fcf9e7); 
+
+  /*background-color: #e2f0fc;*/
   }
 
   .header{
     width: 100%;
     height: 200px;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #1f4d65;
   }
 
   .logo{
@@ -61,14 +64,14 @@ li {
   }
   .logo h1{
     font-size: 50px;
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .logo h2{
     font-size: 20px;
     margin-bottom: 5px;
   }
   .logo:hover{
-  color: hsl(202, 100%, 71%);
+  color: #74b2d4;
   }
 
 
@@ -79,7 +82,7 @@ li {
     display: flex;
     align-items: center;
 
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .menu li {
@@ -93,10 +96,14 @@ li {
 .menu li a {
     color: black;
     transition: 0.3s;
+    
+    font-size:16px;
+
   }
   
   .menu li a:hover {
-    color: hsl(202, 100%, 71%);
+    color:#74b2d4;
+    font-size: 18px;
   }
 
 
@@ -105,25 +112,25 @@ li {
     height: 800px;
     margin: 0 auto;
 
-    margin-top: 150px;
+    margin-top: 140px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .main h1 {
     font-size: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     cursor:default;
   }
   
   .main h2 {
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .main p {
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   
   .main button {
@@ -132,7 +139,7 @@ li {
     height: 50px;
   
     border: 1px solid black;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: transparent;
   
   
@@ -141,8 +148,8 @@ li {
   }
   
   .main button:hover {
-    border: 1px solid  hsl(202, 100%, 71%);
-    color:   hsl(202, 100%, 71%);
+    border: 1px solid  #74b2d4;
+    color:  #74b2d4;
   }
 
 
@@ -161,6 +168,7 @@ li {
 
     margin: 0 auto;
     margin-top: 100px;
+
   }
 
  
@@ -169,6 +177,7 @@ li {
     font-family: 'Times New Roman', Times, serif;
 
     padding-top: 50px;
+    margin-bottom: 30px;
   }
 
   .about .contents {
@@ -180,9 +189,16 @@ li {
   }
   .about .left{
     width: 500px;
-  height: 700px;
+  height: 515px;
   margin-right: 60px;
   font-family: 'Times New Roman', Times, serif;
+
+  
+  border-radius: 20px;
+
+  padding: 8px;
+
+  background-color: #fafbfd;
   }
 
   .about .left h3 {
@@ -203,8 +219,10 @@ li {
   }
   
   .about .right img {
-    width: 450px;
-    height: 550px;
+    width: 430px;
+    height: 530px;
+
+    border-radius: 30px;
   }
 
   .about .leftdown {
@@ -222,12 +240,12 @@ li {
   }
   
   .fa-youtube {
-    color: red;
+    color: rgb(214, 113, 113);
   
   }
   
   .fa-facebook {
-    color: #3b5998;
+    color: #4b72c6;
   }
 
 
@@ -245,7 +263,8 @@ li {
     width: 100%;
     /*따로 써줄 필요는 없다*/
     height: 700px;
-    background-color: #e7f1f1;
+    background: linear-gradient(to bottom, #e2f0fc, #fcf9e7);
+   /* background-color: #e2f0fc;*/
   }
   
   .skills-inner {
@@ -281,6 +300,7 @@ li {
     padding: 10px;
   
     transition: 0.3s;
+    border-radius: 20px;
   }
   
   .skills h3 {
@@ -310,6 +330,7 @@ li {
     
     display: block;
     margin: 0 auto;
+    border-radius: 20px;
   }
 
   .projects .testy p{
@@ -320,8 +341,12 @@ li {
     display: flex;
   }
   
+  .skills .testy h3{
+    margin-left: 20px;
+  }
+  
   .skills .contents li:hover {
-    background-color: hsl(202, 100%, 71%);
+    background-color: #9ccfeb;
     color: white;
   
     transform: scale(1.1);
@@ -369,6 +394,10 @@ li {
   }
   .projects .test{
     display: flex;
+    align-items: center;
+  }
+  .projects .test h3{
+    margin-left: 20px;
   }
   .projects .test p{
     margin-left: 20px;
@@ -417,6 +446,8 @@ li {
   .contact .left {
     width: 400px;
     height: 600px;
+
+    color: #132c3a;
   }
   
   .contact .right {
@@ -424,6 +455,7 @@ li {
     height: 600px;
     border-left: 2px dashed #f1efef;
     padding-left: 50px;
+    color: #132c3a;
   }
   
   .info li {
@@ -435,35 +467,62 @@ li {
     border: 1px solid #ecebeb;
   
     padding: 10px;
-    font-size: 23px;
-    font-weight: bold;
+    font-size: 25px;
+    border-radius: 20px;
+  }
+
+  .fa-solid{
+    margin-right: 8px;
+    font-size:20px;
+    color: #74b2d4;
+  
   }
   
   
   .contact .right p {
     font-size: 25px;
+    padding: 10px;
   }
   
   .contact .right input {
-    width: 700px;
+    width: 600px;
     height: 30px;
     margin-bottom: 30px;
+    padding: 10px;
   
     border: 1px solid #f0f0f0;
+    border-radius: 20px;
   }
   
   .contact .right textarea {
-    width: 700px;
+    width: 600px;
     height: 300px;
     border: 1px solid #f0f0f0;
     border-radius: 5px;
     resize: both;
+    border-radius: 20px;
+    padding: 10px;
+    
   }
   
   .contact .right button {
-    width: 700px;
-    height: 30px;
-    background-color: hsl(202, 100%, 71%);
-    color: white;
+    width: 600px;
+    height: 35px;
+    background-color: #f9f8f8;
+    color: #74b2d4;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+  }
+
+  .contact .right button:hover{
+    width: 600px;
+    height: 35px;
+    background-color:  #9ccfeb;
+    border: 1px solid  #9ccfeb;
+    color:#f0f0f0;
   }
 
